@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card(props) {
-  const colorChange = () => {
-    document.querySelector(".heart-icon").classList.toggle("red");
+  const [like, setLike] = useState(false);
+  const favoriteHandlerAdd = (event) => {
+    setLike((current) => !current);
   };
   return (
     <div className="container">
@@ -31,8 +32,9 @@ export default function Card(props) {
         <FontAwesomeIcon
           icon={faHeart}
           className="heart-icon"
+          id={like ? "red" : " "}
           size="xl"
-          onClick={colorChange}
+          onClick={favoriteHandlerAdd}
         />
       </div>
     </div>
