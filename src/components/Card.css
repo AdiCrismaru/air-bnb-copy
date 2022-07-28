@@ -1,0 +1,58 @@
+.bold {
+  font-weight: bold;
+}
+.gray {
+  color: gray;
+}
+
+.card {
+  width: 175px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card > img {
+  width: 310px;
+  height: 290px;
+  border-radius: 15px;
+}
+.card > img:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+.card-info {
+  min-width: 290px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.review {
+  margin-left: auto;
+}
+.more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.heart-icon {
+  position: absolute;
+  right: -100px;
+  top: 20px;
+  color: white;
+  opacity: 0.8;
+}
+.heart-icon:hover {
+  color: red;
+  opacity: 1;
+  cursor: pointer;
+}
+.red {
+  color: red;
+  opacity: 1;
+}

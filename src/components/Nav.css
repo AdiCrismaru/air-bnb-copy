@@ -1,0 +1,104 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 36px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+nav > img {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  left: 70px;
+}
+nav > a {
+  align-self: center;
+  margin-right: 25px;
+  white-space: nowrap;
+  font-weight: bold;
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+}
+nav > a:hover {
+  background-color: rgb(232, 232, 232);
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+.whole-menu {
+  display: flex;
+  border: 0.1px solid gray;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+.whole-menu:hover {
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+.user-icon {
+  text-decoration: none;
+  color: gray;
+  padding: 1px;
+  border-radius: 20px;
+  margin: 2px;
+}
+
+#menu {
+  align-self: center;
+  white-space: nowrap;
+  width: 40px;
+  padding-left: 10px;
+}
+.bar {
+  height: 2px;
+  width: 50%;
+  background-color: black;
+  display: block;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav li a {
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0px 10px;
+}
+.nav li:hover {
+  background-color: rgb(232, 232, 232);
+  border-radius: 10px;
+}
+.nav li {
+  font-size: 14px;
+  list-style: none;
+  padding: 5px;
+  text-align: left;
+}
+.nav {
+  width: 255px;
+  position: absolute;
+  z-index: 1;
+  right: 70px;
+  top: 70px;
+  padding: 10px;
+  margin: 0 20px;
+  transition: 0.3 ease;
+  display: none;
+  background-color: rgb(248, 248, 255);
+  border-radius: 10px;
+}
+.change {
+  display: block;
+}
